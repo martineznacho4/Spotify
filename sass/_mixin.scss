@@ -1,0 +1,53 @@
+
+@mixin reset(){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+
+    li{
+        list-style: none;
+        color: $fontColor;
+    }
+
+    a{
+        text-decoration: none;
+        }
+    }
+
+    body{
+        background-color: $colorFondo;
+        font-family: $fontFamiliy;
+        font-size: $fontSize;
+    }
+
+
+@mixin boton{
+    background-color: $colorPrincipal;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: $colorSecundario;
+}
+
+@mixin sizeWH($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexAround{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@mixin flexBetween{
+    display: flex;
+    justify-content: space-between;
+}
